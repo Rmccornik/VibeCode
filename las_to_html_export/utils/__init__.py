@@ -1,10 +1,11 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 """Utilities package for LiDAR HTML Exporter."""
 
-from . import chunking
-from . import compression
-from . import html_generator
-from . import point_processing
+# Use absolute imports for Blender addon compatibility
+from las_to_html_export.utils import chunking
+from las_to_html_export.utils import compression
+from las_to_html_export.utils import html_generator
+from las_to_html_export.utils import point_processing
 
 __all__ = [
     "chunking",

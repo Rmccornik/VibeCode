@@ -16,10 +16,11 @@ bl_info = {
 
 import bpy
 
-from . import properties
-from . import preferences
-from . import export_operator
-from . import ui_panel
+# Use absolute imports for Blender addon compatibility
+import las_to_html_export.properties as properties
+import las_to_html_export.preferences as preferences
+import las_to_html_export.export_operator as export_operator
+import las_to_html_export.ui_panel as ui_panel
 
 
 def register():
