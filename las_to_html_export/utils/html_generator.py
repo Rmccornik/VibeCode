@@ -5,7 +5,8 @@ import json
 import html as html_lib
 import os
 
-from ..templates import HTML_TEMPLATE
+# Use absolute imports for Blender addon compatibility
+from las_to_html_export.templates import HTML_TEMPLATE
 
 
 def generate_html_content(

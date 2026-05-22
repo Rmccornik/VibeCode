@@ -14,14 +14,15 @@ import numpy as np
 
 from bpy_extras.io_utils import ExportHelper
 
-from ..templates import HTML_TEMPLATE
-from .utils.chunking import (
+# Use absolute imports for Blender addon compatibility
+from las_to_html_export.templates import HTML_TEMPLATE
+from las_to_html_export.utils.chunking import (
     calculate_points_per_chunk,
     create_chunk_ranges,
     assign_global_ranges,
 )
-from .utils.compression import compress_payload, store_payload, format_bytes
-from .utils.point_processing import (
+from las_to_html_export.utils.compression import compress_payload, store_payload, format_bytes
+from las_to_html_export.utils.point_processing import (
     deduplicate_points,
     compute_morton_codes,
     lod_sample_indices,

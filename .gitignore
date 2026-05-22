@@ -1,1 +1,13 @@
-Nothing should be ignored in this case, as only a README.md file was added, which is a source/config file and not a build artifact, dependency, or temporary file.
+```
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Archives
+*.zip
+
+# Environment files
+.env
+.env.local
+*.env.*
+```
